@@ -16,10 +16,10 @@ function App() {
 
 	const addItem = item => {
 		// add the given item to the cart
-		setCart({
-			cart: addItem
-		})
+		setCart([...cart, item])
 	};
+
+	
 
 	return (
 		<div className="App">
